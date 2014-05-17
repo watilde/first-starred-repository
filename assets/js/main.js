@@ -2,14 +2,14 @@ $('#username').keypress( function (e) {
   var username = $('#username').val();
   username = encodeURIComponent(username);
   if (e.which === 13) {
-    search(username);
+    $('#main').fadeOut('fast',search(username));
   }
 });
 
 $('#search').on('click', function (){
   var username = $('#username').val();
   username = encodeURIComponent(username);
-  search(username);
+  $('#main').fadeOut('fast',search(username));
 });
 
 function search (username) {
