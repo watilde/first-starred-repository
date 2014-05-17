@@ -1,6 +1,23 @@
 body {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .logo {
+  margin: 10px auto 0;
+}
+.navbar-brand > img {
+  margin-top: -5px;
+}
+.inputs {
   margin: 30px auto 0;
+}
+h1 {
+  margin: 5px auto 0;
+  font: 30px Helvetica, arial, freesans, clean, sans-serif;
+}
+h2 {
+  margin: 10px auto 0;
+  font: 25px Helvetica, arial, freesans, clean, sans-serif;
+}
+#main {
+  margin-top: 30px;
 }
