@@ -20,4 +20,42 @@ h2 {
 }
 #main {
   margin-top: 30px;
+  display: none;
+}
+.panel, .panel-body {
+  padding: 0;
+}
+.panel-body {
+  padding: 15px 0 0 15px;
+}
+.panel-footer {
+  background-color: #fff;
+  color: #707070;
+  font-size: 15px;
+  padding-right: 0;
+}
+.media {
+  margin-bottom: 0;
+}
+.media-heading {
+  margin-top: 5px;
+}
+.media-description {
+  margin-top: 0;
+  color: #66757f;
+  font-size: 14px;
+}
+#name:link {
+  color: #000;
+}
+#login:link {
+  color: #66757f;
+}
+#owner {
+  width: 64px;
+  height: 64px;
+}
+#description {
+  margin-top: 10px;
+  font-size: 20px;
 }

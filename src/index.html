@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Discover your first Starred Repository | Discover</title>
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Discover your first Starred Repository | Discover</title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -24,10 +24,10 @@
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">English</a></li>
-        </ul>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">English</a></li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -54,9 +54,42 @@
     </div>
     <div class="col-md-4"></div>
   </div>
-  <div id='main'></div>
+  <div id='main'>
+    <div  class="row">
+      <div class="col-md-3"></div>
+      <div class="panel panel-default col-md-6">
+        <div class="panel-body">
+          <ul class="media-list">
+            <li class="media">
+              <a class="pull-left" id="owner">
+                <img id="avatar_url" class="media-object thumbnail" src="" alt="Avatar URL" width=64 height=64>
+              </a>
+              <div class="media-body">
+                <iframe class="pull-right" id="follow" src=""
+                        allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+                <h4 class="media-heading"><a id="name" class="html_url"></a></h4>
+                <h4 class="media-description"><a id="login" class="owner_url"></a></h4>
+              </div>
+            </li>
+            <li>
+              <p id="description"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="panel-footer">
+          <span id="stargazers_count"></span> STARGAZERS
+          <iframe id="fork" class="pull-right" src=""
+                  allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+    <div class="col-md-5"></div>
+    <a id="share" class="btn btn-primary btn-lg col-md-2" target="_blank">Tweet it!</a>
+    <div class="col-md-5"></div>
+  </div>
   <script src="assets/js/jquery-2.1.0.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/main.js"></script>
-  </body>
-  </html>
+</body>
+</html>
