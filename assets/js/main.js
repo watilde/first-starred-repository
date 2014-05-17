@@ -1,5 +1,10 @@
+if (window.location.hash.length > 0) {
+  var username = window.location.hash.substr(1);
+  $('#main').fadeOut('fast',search(username));
+}
 $('#username').keypress( function (e) {
   var username = $('#username').val();
+  window.location.hash = username;
   username = encodeURIComponent(username);
   if (e.which === 13) {
     $('#main').fadeOut('fast',search(username));
@@ -8,6 +13,7 @@ $('#username').keypress( function (e) {
 
 $('#search').on('click', function (){
   var username = $('#username').val();
+  window.location.hash = username;
   username = encodeURIComponent(username);
   $('#main').fadeOut('fast',search(username));
 });
@@ -35,7 +41,7 @@ function search (username) {
         o.login + '&repo=' + a.name + '&type=fork&count=true');
       $('#main').fadeIn('slow');
 
-      $('#share').attr('href', 'https://twitter.com/intent/tweet?url=http%3a%2f%2fwatilde%2egithub%2eio%2ffirst%2dstarred%2drepository' +
+      $('#share').attr('href', 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) +
         '&amp;text=I+found+my+%23FirstStarredRepository%3A+' +
         encodeURIComponent(a.html_url) + '.+What+was+yours%3F');
     });
