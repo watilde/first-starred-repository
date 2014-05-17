@@ -45,10 +45,10 @@ h2 {
   color: #66757f;
   font-size: 14px;
 }
-#name:link {
+#name:link, #name:visited {
   color: #000;
 }
-#login:link {
+#login:link, #login:visited {
   color: #66757f;
 }
 #owner {
