@@ -1,5 +1,6 @@
 if (window.location.hash.length > 0) {
   var username = window.location.hash.substr(1);
+  $('#username').val(username);
   $('#main').fadeOut('fast',search(username));
 }
 $('#username').keypress( function (e) {
